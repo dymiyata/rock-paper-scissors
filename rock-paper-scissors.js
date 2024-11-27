@@ -9,3 +9,13 @@ function getComputerChoice() {
   return 'scissors';
 }
 
+function getHumanChoice() {
+  let num = Number(prompt("Enter 1 for Rock, 2 for Paper, or 3 for Scissors.\n Invalid entries will default to Rock", "1"));
+  if (num == 2) {
+    return 'paper';
+  }
+  if (num == 3) {
+    return 'scissors';
+  }
+  return 'rock';
+}
